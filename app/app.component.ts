@@ -21,8 +21,8 @@ const HEROES: Hero[] = [
                <li *ngFor='let hero of heroes' (click)='onSelect(hero)' [class.selected]="hero === selectedHero" >
                 <span class="badge">{{hero.id}}</span> {{hero.name}}
                </li>
-               <my-hero-detail [hero]="selectedHero"></my-hero-detail>
              </ul>
+             <my-hero-detail [hero]="selectedHero"></my-hero-detail>
             `,
   styles: [`
    .selected { background-color: #CFD8DC !important; color: white; }
